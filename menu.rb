@@ -1,17 +1,14 @@
-# require 'tty-prompt'
-# require 'pry'
-
+# our main menu 
 def initialize_menu()
-
     puts 
-    puts("\t1. Login?")
-    puts("\t2. Create account? ")
-    puts("\t3. Reset password? ")
-    puts("\t4. Exit? ")
+    puts("\t1. Login?".colorize(:blue))
+    puts("\t2. Create account? ".colorize(:blue))
+    puts("\t3. Exit? ".colorize(:blue))
     puts 
 
+    # loop through menu features
     loop do
-        print "What would you like to do? "
+        print "What would you like to do? (login, create, reset, exit) "
         user_input = gets().strip.downcase
       
         case user_input 
@@ -20,15 +17,20 @@ def initialize_menu()
         when '1'
             login()
         when 'create'
-            create_new_user()
-        when 'reset'
-            puts "reset"
+            new_user = User.new("","")
+            new_user.create_new_user()
+        when '2'
+            new_user = User.new("","")
+            new_user.create_new_user()
         when 'exit'
-            puts "Exiting Ruby Terminal Blogger - See ya next time!"
+            puts "Exiting Ruby Terminal Blogger - See ya next time!".colorize(:green)
+            break
+        when '3'
+            puts "Exiting Ruby Terminal Blogger - See ya next time!".colorize(:green)
             break
         else
             puts
-            puts "Command not recognized. Please try again."
+            puts "Command not recognized. Please try again.".colorize(:red)
             puts
         end
     end
@@ -45,14 +47,13 @@ def login
 
     username = result[:username] 
     password = result[:password]
-
-    
+    # create user instance 
     @user_instance = User.new(username, password)
     check_if_login_valid = @user_instance.is_user?(username, password)
-
+    # check if login is valid
     if check_if_login_valid == true
         puts
-        puts("Logged #{username} into Ruby Terminal Blogger!")
+        puts("Logged #{username} into Ruby Terminal Blogger!".colorize(:green))
 
         current_user_id = @user_instance.return_user_id()
 
@@ -62,20 +63,20 @@ def login
         blog_menu(current_user_id)
 
     elsif check_if_login_valid == false
-        puts("Either user doesn't exist or password is wrong... returning to menu...")
+        puts("Either user doesn't exist or password is wrong... returning to menu...".colorize(:red))
         puts
     end
 
 end
-
+# menu for our user who is logged in 
 def blog_menu(user_id)
     loop do
         puts 
         puts("User Options: ")
         puts
-        puts("\t1. Create post?")
-        puts("\t2. View posts")
-        puts("\t3. Logout?")
+        puts("\t1. Create post?".colorize(:blue))
+        puts("\t2. View posts?".colorize(:blue))
+        puts("\t3. Logout?".colorize(:blue))
         puts 
         print "What would you like to do? (create, view or logout) "
         user_input = gets().strip.downcase
@@ -106,11 +107,8 @@ def blog_menu(user_id)
             @user_instance.log_user_out()
         else
             puts
-            puts "Command not recognized. Please try again."
+            puts "Command not recognized. Please try again.".colorize(:red)
             puts
         end
     end
-end
-
-def create_account()
 end

@@ -1,1 +1,29 @@
 user_id,post_id,title,author,date,text
+2,1,Three things you don't know about australia,Jing Li,06/02/2019,"#1: If you visited one new beach in Australia every day, it would take over 27 years to see them all.
+#2 before 1902, it was illegal to swim at the beach during the day.
+#3 the largest Greek population outside of Athens is said to be in Melbourne."
+2,2,Burgers of Melbourne,Jing Li,17/02/2019,The burger Melbourne scene is massive and it can be hard to always pick a winner. Brennan from Burgers of Melbourne has eaten at most of Melbourneâ€™s best burger joints. His website provides review and some awesome photos to help you choose your next burger adventure.
+2,3,What is artificial intelligence (AI),Jing Li,06/03/2019,"Artificial intelligence (AI) is an area of computer science that emphasizes the creation of intelligent machines that work and react like humans. Some of the activities computers with artificial intelligence are designed for include:
+
+.Speech recognition
+.Learning
+.Planning
+.Problem solving"
+1,4,Ruby programming language,Rastko Beciric,01/03/2019,"Ruby is...
+A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
+1,5,Top attractions in new york city,Rastko Beciric,03/03/2019,".Central Park
+.The Metropolitan Museum of Art
+.The National 9/11 Memorial & Museum
+.Empire State Building
+.Statue of Liberty"
+1,6,Bitcoin mining,Rastko Beciric,05/03/2019,"Bitcoin mining is the process of adding transaction records to Bitcoin's public ledger of past transactions or blockchain. This ledger of past transactions is called the block chain as it is a chain of blocks. The block chain serves to confirm transactions to the rest of the network as having taken place.
+
+Bitcoin nodes use the block chain to distinguish legitimate Bitcoin transactions from attempts to re-spend coins that have already been spent elsewhere."
+1,7,3 facts you may not know about dogs,Rastko Beciric,06/03/2019,"Your dog is as smart as a 2-year-old toddler.
+There’s a reason your tot and your pup get along so well: they speak the same language. Or at least, they likely understand roughly the same number of words and gestures — 250!
+ 
+Dogs and cats both slurp water the same way.
+This may be hard to believe since dogs are such messy drinkers, but just like cats, our canine friends bend the tip of their tongue and raise liquid in a column up to their mouths.
+ 
+Your dog does have a sense of time — and misses you when you’re gone.
+If you think your dog knows when it’s time for dinner or a walk, you’re right! Dogs pick up on our routines and habits, and they also sense how much time has passed. One study showed how dogs responded differently to their owners being gone for different lengths of time."
