@@ -1,1 +1,21 @@
 user_id,post_id,title,author,date,text
+2,1,Three things you don't know about australia,Jing Li,06/02/2019,"#1: If you visited one new beach in Australia every day, it would take over 27 years to see them all.
+#2 before 1902, it was illegal to swim at the beach during the day.
+#3 the largest Greek population outside of Athens is said to be in Melbourne."
+2,2,Burgers of Melbourne,Jing Li,17/02/2019,The burger Melbourne scene is massive and it can be hard to always pick a winner. Brennan from Burgers of Melbourne has eaten at most of Melbourneâ€™s best burger joints. His website provides review and some awesome photos to help you choose your next burger adventure.
+2,3,What is artificial intelligence (AI),Jing Li,06/03/2019,"Artificial intelligence (AI) is an area of computer science that emphasizes the creation of intelligent machines that work and react like humans. Some of the activities computers with artificial intelligence are designed for include:
+
+.Speech recognition
+.Learning
+.Planning
+.Problem solving"
+1,4,Ruby programming language,Rastko Beciric,01/03/2019,"Ruby is...
+A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
+1,5,Top attractions in new york city,Rastko Beciric,03/03/2019,".Central Park
+.The Metropolitan Museum of Art
+.The National 9/11 Memorial & Museum
+.Empire State Building
+.Statue of Liberty"
+1,6,Bitcoin mining,Rastko Beciric,05/03/2019,"Bitcoin mining is the process of adding transaction records to Bitcoin's public ledger of past transactions or blockchain. This ledger of past transactions is called the block chain as it is a chain of blocks. The block chain serves to confirm transactions to the rest of the network as having taken place.
+
+Bitcoin nodes use the block chain to distinguish legitimate Bitcoin transactions from attempts to re-spend coins that have already been spent elsewhere."
