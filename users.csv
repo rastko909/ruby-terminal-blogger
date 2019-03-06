@@ -1,3 +1,6 @@
 user_id,username,name,password,secret_phrase
 1,rastko909@gmail.com,Rastko Beciric,password123,joseph
-2,random123@hotmail.com,Bobby Bobs,other_password234,mary
+2,random123@hotmail.com,John Doe,other_password,mary
+3,alexjones@hotmail.com,Alex Jones,other_password,alex
+4,a@a.com,Jing,a,whatever
+5,jli@gmail.com,Jing Li,aaa,joy
