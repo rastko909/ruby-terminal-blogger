@@ -1,10 +1,3 @@
-# require 'csv'
-# require 'tty-prompt'
-# require 'tty-box'
-# require 'tty-font'
-# require 'pastel'
-# require 'pry'
-
 class Post
     attr_accessor :user_id, :post_id, :title, :author, :date,  :keywords, :text
 
@@ -125,12 +118,9 @@ class Post
             csv_post_title = row[:title]
             csv_post_content = row[:text]
             csv_post_date = row[:date]
-            #csv_post_content = csv_post_content.delete_prefix('"').delete_suffix('"')
 
-            #csv_post_content = csv_post_content.join(',')
-            # binding.pry
             puts("##{csv_post_id}: '#{csv_post_title}'\nDate: #{csv_post_date}
-                \n#{csv_post_content}\n-------------------------") if csv_user_id == user_id
+                \n#{csv_post_content}\n\n-------------------------") if csv_user_id == user_id
         end
     end
 

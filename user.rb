@@ -1,6 +1,6 @@
-# user_id,username,name,password,secret_phrase
 require 'csv'
 require 'pry'
+require './encryption.rb'
 
 class User
     attr_accessor :user_id, :username, :name, :password
@@ -9,8 +9,8 @@ class User
         @user_id = ""
         @username = username
         @name = ""
-        @password = password
-
+        # use encrypt method to hash password in the csv file 
+        @password = encrypt(password)
         @index_user_csv = index_csv()
     end
 
@@ -28,7 +28,7 @@ class User
             csv_password = row[:password]
             @user_id = row[:user_id]
             if username == csv_username
-                if password == csv_password
+                if encrypt(password) == csv_password
                     return true
                 else
                     return false
@@ -43,18 +43,20 @@ class User
         initialize_menu()
     end
 
-    def cache_user_posts()
-
-        # when user logs in, load posts.csv - find all posts by use if anu, create an ID index to appends
-    end
-
     def return_user_id()
         return @user_id
     end
 
-    def create_user()
+    def create_new_user()
         # create new user by inserting row into csv file
-        # remember to get id count and add to it 
+        # remember to get id count and add to it
+        puts
+        puts("Welcome!")
+        new_user_prompt = TTY::Prompt.new
+        new_user_result = prompt.collect do
+            key(:new_username).ask('Username: (must be an email) ') { |q| q.validate :email }
+            key(:new_password).ask('Password: (min. 6 characters with at least 1 number')
+        end
     end
 
     def is_secret_phrase_valid?()
@@ -65,18 +67,3 @@ class User
         # invoke is_secret_phrase_valid?()
     end
 end
-
-# NUMBER 1 BOOLSHIT CODE TO DISCARD 
-
-# DIAGNOSTIC METHOD FOR CSV METHOD LEARNING
-# def list_file()
-#     CSV.foreach('users.csv', headers: true, header_converters: :symbol) do |row|
-#         user_id = row[:user_id]
-#         name = row[:name]
-#         username = row[:username]
-#         password = row[:password]
-#         secret_phrase = row[:secret_phrase]
-#         puts "#{user_id} #{username} #{name} #{password} #{secret_phrase}"
-#     end
-#     # return true or false
-# end

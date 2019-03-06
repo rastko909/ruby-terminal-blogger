@@ -20,7 +20,7 @@ def initialize_menu()
         when '1'
             login()
         when 'create'
-            puts "create"
+            create_new_user()
         when 'reset'
             puts "reset"
         when 'exit'
