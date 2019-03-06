@@ -19,6 +19,7 @@ A dynamic, open source programming language with a focus on simplicity and produ
 1,6,Bitcoin mining,Rastko Beciric,05/03/2019,"Bitcoin mining is the process of adding transaction records to Bitcoin's public ledger of past transactions or blockchain. This ledger of past transactions is called the block chain as it is a chain of blocks. The block chain serves to confirm transactions to the rest of the network as having taken place.
 
 Bitcoin nodes use the block chain to distinguish legitimate Bitcoin transactions from attempts to re-spend coins that have already been spent elsewhere."
+<<<<<<< HEAD
 1,7,3 facts you may not know about dogs,Rastko Beciric,06/03/2019,"Your dog is as smart as a 2-year-old toddler.
 There’s a reason your tot and your pup get along so well: they speak the same language. Or at least, they likely understand roughly the same number of words and gestures — 250!
  
@@ -27,3 +28,5 @@ This may be hard to believe since dogs are such messy drinkers, but just like ca
  
 Your dog does have a sense of time — and misses you when you’re gone.
 If you think your dog knows when it’s time for dinner or a walk, you’re right! Dogs pick up on our routines and habits, and they also sense how much time has passed. One study showed how dogs responded differently to their owners being gone for different lengths of time."
+=======
+>>>>>>> bafb2913153abf08625b615d8dc24c1f7fbfcb50
